@@ -172,63 +172,71 @@ pre code {
 }
     </style></head><body data-spy="scroll" data-target="#sidebar"><div class="container"><div class="row"><div class="col-md-9" role="main"><div class="page-header"><h1>Sport Value Markets API documentation</h1><p>http://api.sportvalue.co/</p></div><div class="panel panel-default"><div class="panel-heading"><h3 id="players" class="panel-title">/players</h3></div><div class="panel-body"><div class="top-resource-description"><p>Public API containing player information</p></div><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_players__sport_"><span class="parent">/players</span>/{sport}</a> <span class="methods"><a href="#players__sport__get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_players__sport_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#players__sport__get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>List players for a given sport</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="players__sport__get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/players</span>/{sport}</h4></div><div class="modal-body"><div class="alert alert-info"><p>List players for a given sport</p></div><ul class="nav nav-tabs"><li class="active"><a href="#players__sport__get_request" data-toggle="tab">Request</a></li><li><a href="#players__sport__get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="players__sport__get_request"><h3>URI Parameters</h3><ul><li><strong>sport</strong>: <em><span class="required">required</span>(string)</em></li></ul></div><div class="tab-pane" id="players__sport__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>[
   {
-      "id": "1",
-      "externalId": "138775",
+      "id": "3",
+      "externalId": "90026234",
+      "provider": "sportsdata",
       "sport": "football",
-      "name": "Ethan Laird",
-      "position": "DEF",
-      "teamName": "Manchester United",
-      "age": 19,
-      "birthDate": "05/08/2001",
-      "birthPlace": null,
+      "name": "Adam Smith",
+      "position": "D",
+      "teamName": "AFC Bournemouth",
+      "age": null,
+      "birthDate": "1991-04-29T00:00:00",
+      "birthPlace": "London",
       "birthCountry": "England",
       "nationality": "England",
-      "height": null,
-      "weight": null,
-      "tradable": null
+      "height": "180",
+      "weight": "78",
+      "photo": "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90026234.png"
   },
   ...
 ]
 </code></pre></div></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_players__sport___playerid_"><span class="parent">/players/{sport}</span>/{playerId}</a> <span class="methods"><a href="#players__sport___playerid__get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_players__sport___playerid_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#players__sport___playerid__get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Get player details for a given player</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="players__sport___playerid__get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/players/{sport}</span>/{playerId}</h4></div><div class="modal-body"><div class="alert alert-info"><p>Get player details for a given player</p></div><ul class="nav nav-tabs"><li class="active"><a href="#players__sport___playerid__get_request" data-toggle="tab">Request</a></li><li><a href="#players__sport___playerid__get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="players__sport___playerid__get_request"><h3>URI Parameters</h3><ul><li><strong>sport</strong>: <em><span class="required">required</span>(string)</em></li><li><strong>playerId</strong>: <em><span class="required">required</span>(string)</em></li></ul></div><div class="tab-pane" id="players__sport___playerid__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
-    "id": "1",
-    "externalId": "138775",
+    "id": "3",
+    "externalId": "90026234",
+    "provider": "sportsdata",
     "sport": "football",
-    "name": "Ethan Laird",
-    "position": "DEF",
-    "teamName": "Manchester United",
-    "age": 19,
-    "birthDate": "05/08/2001",
-    "birthPlace": null,
+    "name": "Adam Smith",
+    "position": "D",
+    "teamName": "AFC Bournemouth",
+    "age": null,
+    "birthDate": "1991-04-29T00:00:00",
+    "birthPlace": "London",
     "birthCountry": "England",
     "nationality": "England",
-    "height": null,
-    "weight": null,
-    "tradable": null
+    "height": "180",
+    "weight": "78",
+    "photo": "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90026234.png"
 }
 </code></pre></div></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_players__sport___playerid__stats"><span class="parent">/players/{sport}/{playerId}</span>/stats</a> <span class="methods"><a href="#players__sport___playerid__stats_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_players__sport___playerid__stats" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#players__sport___playerid__stats_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Get player stats</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="players__sport___playerid__stats_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/players/{sport}/{playerId}</span>/stats</h4></div><div class="modal-body"><div class="alert alert-info"><p>Get player stats</p></div><ul class="nav nav-tabs"><li class="active"><a href="#players__sport___playerid__stats_get_request" data-toggle="tab">Request</a></li></ul><div class="tab-content"><div class="tab-pane active" id="players__sport___playerid__stats_get_request"><h3>URI Parameters</h3><ul><li><strong>sport</strong>: <em><span class="required">required</span>(string)</em></li><li><strong>playerId</strong>: <em><span class="required">required</span>(string)</em></li></ul></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="teams" class="panel-title">/teams</h3></div><div class="panel-body"><div class="top-resource-description"><p>Public API containing team information</p></div><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_teams__sport_"><span class="parent">/teams</span>/{sport}</a> <span class="methods"><a href="#teams__sport__get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_teams__sport_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#teams__sport__get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Get all teams in a given sport</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="teams__sport__get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/teams</span>/{sport}</h4></div><div class="modal-body"><div class="alert alert-info"><p>Get all teams in a given sport</p></div><ul class="nav nav-tabs"><li class="active"><a href="#teams__sport__get_request" data-toggle="tab">Request</a></li><li><a href="#teams__sport__get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="teams__sport__get_request"><h3>URI Parameters</h3><ul><li><strong>sport</strong>: <em><span class="required">required</span>(string)</em></li></ul></div><div class="tab-pane" id="teams__sport__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>[
   {
-      "id": "1",
-      "externalId": "33",
+      "id": "8",
+      "externalId": "515",
+      "provider": "sportsdata",
+      "code": "LIV",
       "sport": "football",
-      "leagueId": "1",
-      "leagueExtId": "524",
-      "leagueName": "Premier League",
-      "name": "Manchester United",
+      "national": null,
+      "leagueExtId": null,
+      "leagueName": null,
+      "name": "Liverpool FC",
       "country": "England",
-      "logo": "https://media.api-sports.io/football/teams/33.png"
+      "city": "Liverpool",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/370px-Liverpool_FC.svg.png"
   },
   ...
 ]
 </code></pre></div></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_teams__sport___teamid_"><span class="parent">/teams/{sport}</span>/{teamId}</a> <span class="methods"><a href="#teams__sport___teamid__get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_teams__sport___teamid_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#teams__sport___teamid__get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Get team details</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="teams__sport___teamid__get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/teams/{sport}</span>/{teamId}</h4></div><div class="modal-body"><div class="alert alert-info"><p>Get team details</p></div><ul class="nav nav-tabs"><li class="active"><a href="#teams__sport___teamid__get_request" data-toggle="tab">Request</a></li><li><a href="#teams__sport___teamid__get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="teams__sport___teamid__get_request"><h3>URI Parameters</h3><ul><li><strong>sport</strong>: <em><span class="required">required</span>(string)</em></li><li><strong>teamId</strong>: <em><span class="required">required</span>(string)</em></li></ul></div><div class="tab-pane" id="teams__sport___teamid__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
-    "id": "1",
-    "externalId": "33",
+    "id": "8",
+    "externalId": "515",
+    "provider": "sportsdata",
+    "code": "LIV",
     "sport": "football",
-    "leagueId": "1",
-    "leagueExtId": "524",
-    "leagueName": "Premier League",
-    "name": "Manchester United",
+    "national": null,
+    "leagueExtId": null,
+    "leagueName": null,
+    "name": "Liverpool FC",
     "country": "England",
-    "logo": "https://media.api-sports.io/football/teams/33.png"
+    "city": "Liverpool",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/370px-Liverpool_FC.svg.png"
 }
 </code></pre></div></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="market" class="panel-title">/market</h3></div><div class="panel-body"><div class="top-resource-description"><p>Public market data api</p></div><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_market__market_"><span class="parent">/market</span>/{market}</a> <span class="methods"><a href="#market__market__get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_market__market_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#market__market__get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>List all tradeable assets in a given market</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="market__market__get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/market</span>/{market}</h4></div><div class="modal-body"><div class="alert alert-info"><p>List all tradeable assets in a given market</p></div><ul class="nav nav-tabs"><li class="active"><a href="#market__market__get_request" data-toggle="tab">Request</a></li><li><a href="#market__market__get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="market__market__get_request"><h3>URI Parameters</h3><ul><li><strong>market</strong>: <em><span class="required">required</span>(string)</em></li></ul></div><div class="tab-pane" id="market__market__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>[
   {
