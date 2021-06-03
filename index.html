@@ -210,43 +210,184 @@ pre code {
     "photo": "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90026266.png"
 }
 </code></pre></div></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_players__sport___playerid__stats"><span class="parent">/players/{sport}/{playerId}</span>/stats</a> <span class="methods"><a href="#players__sport___playerid__stats_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_players__sport___playerid__stats" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#players__sport___playerid__stats_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Get player stats</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="players__sport___playerid__stats_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/players/{sport}/{playerId}</span>/stats</h4></div><div class="modal-body"><div class="alert alert-info"><p>Get player stats</p></div><ul class="nav nav-tabs"><li class="active"><a href="#players__sport___playerid__stats_get_request" data-toggle="tab">Request</a></li><li><a href="#players__sport___playerid__stats_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="players__sport___playerid__stats_get_request"><h3>URI Parameters</h3><ul><li><strong>sport</strong>: <em><span class="required">required</span>(string)</em></li><li><strong>playerId</strong>: <em><span class="required">required</span>(string)</em></li></ul></div><div class="tab-pane" id="players__sport___playerid__stats_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
-    "id": "21",
-    "sport": "football",
-    "name": "Callum Hudson-Odoi",
-    "teamName": "Chelsea FC",
-    "position": "FWD",
-    "number": 20,
-    "score": 1,
-    "eventDate": "2020-09-25T21:00:00.000Z",
-    "minutesPlayed": 14,
-    "offsides": 0,
-    "touches": 16,
-    "shots": 0,
-    "shotsOn": 0,
-    "goals": 0,
-    "goalsConceded": null,
-    "goalAssists": 0,
-    "passes": 11,
-    "passesKey": 2,
-    "tackles": null,
-    "tacklesBlocks": 0,
-    "tacklesInterceptions": 0,
-    "duels": null,
-    "duelsWon": null,
-    "dribbles": null,
-    "dribblesSuccess": null,
-    "dribblesPast": null,
-    "fouls": 0,
-    "foulsCommitted": 0,
-    "yellowCards": 0,
-    "redCards": 0,
-    "penaltyWon": 0,
-    "penaltyCommitted": 0,
-    "penaltySuccess": 0,
-    "penaltyMissed": 0,
-    "penaltySaved": 0,
-    "cleanSheet": false
-}
+  "id": "5",
+  "sport": "football",
+  "name": "Benjamin Chilwell",
+  "teamName": "Chelsea FC",
+  "position": "DEF",
+  "number": 21,
+  "score": 17,
+  "eventDate": "2021-05-23T00:00:00.000Z",
+  "stats": [
+      {
+          "name": "minutesPlayed",
+          "type": "Number",
+          "label": "Minutes Played",
+          "value": 56
+      },
+      {
+          "name": "offsides",
+          "type": "Number",
+          "label": "Offsides",
+          "value": 0
+      },
+      {
+          "name": "touches",
+          "type": "Number",
+          "label": "Touches",
+          "value": 56
+      },
+      {
+          "name": "shots",
+          "type": "Number",
+          "label": "Shots",
+          "value": 1
+      },
+      {
+          "name": "shotsOn",
+          "type": "Number",
+          "label": "Shots on Target",
+          "value": 1
+      },
+      {
+          "name": "goals",
+          "type": "Number",
+          "label": "Goals",
+          "value": 0
+      },
+      {
+          "name": "goalsConceded",
+          "type": "Number",
+          "label": "Goals Conceded",
+          "value": null
+      },
+      {
+          "name": "goalAssists",
+          "type": "Number",
+          "label": "Assists",
+          "value": 0
+      },
+      {
+          "name": "passes",
+          "type": "Number",
+          "label": "Passes",
+          "value": 32
+      },
+      {
+          "name": "passesKey",
+          "type": "Number",
+          "label": "Key Passes",
+          "value": 27
+      },
+      {
+          "name": "tackles",
+          "type": "Number",
+          "label": "Tackles",
+          "value": null
+      },
+      {
+          "name": "tacklesBlocks",
+          "type": "Number",
+          "label": "Blocks",
+          "value": 0
+      },
+      {
+          "name": "tacklesInterceptions",
+          "type": "Number",
+          "label": "Interceptions",
+          "value": 0
+      },
+      {
+          "name": "duels",
+          "type": "Number",
+          "label": "Duels",
+          "value": null
+      },
+      {
+          "name": "duelsWon",
+          "type": "Number",
+          "label": "Duels Won",
+          "value": null
+      },
+      {
+          "name": "dribbles",
+          "type": "Number",
+          "label": "Dribbles",
+          "value": null
+      },
+      {
+          "name": "dribblesSuccess",
+          "type": "Number",
+          "label": "Successful Dribbles",
+          "value": null
+      },
+      {
+          "name": "dribblesPast",
+          "type": "Number",
+          "label": "Dribbles Past Defender",
+          "value": null
+      },
+      {
+          "name": "fouls",
+          "type": "Number",
+          "label": "Fouls",
+          "value": 0
+      },
+      {
+          "name": "foulsCommitted",
+          "type": "Number",
+          "label": "Fouls Committed",
+          "value": 0
+      },
+      {
+          "name": "yellowCards",
+          "type": "Number",
+          "label": "Yellow Cards",
+          "value": 0
+      },
+      {
+          "name": "redCards",
+          "type": "Number",
+          "label": "Red Cards",
+          "value": 0
+      },
+      {
+          "name": "penaltyWon",
+          "type": "Number",
+          "label": "Penalties Won",
+          "value": 0
+      },
+      {
+          "name": "penaltyCommitted",
+          "type": "Number",
+          "label": "Penalties Committed",
+          "value": 0
+      },
+      {
+          "name": "penaltySuccess",
+          "type": "Number",
+          "label": "Successful Penalties",
+          "value": 0
+      },
+      {
+          "name": "penaltyMissed",
+          "type": "Number",
+          "label": "Missed Penalties",
+          "value": 0
+      },
+      {
+          "name": "penaltySaved",
+          "type": "Number",
+          "label": "Saved Penalties",
+          "value": 0
+      },
+      {
+          "name": "cleanSheet",
+          "type": "Number",
+          "label": "Clean Sheets",
+          "value": 0
+      }
+  ]
 </code></pre></div></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="teams" class="panel-title">/teams</h3></div><div class="panel-body"><div class="top-resource-description"><p>Public API containing team information</p></div><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_teams__sport_"><span class="parent">/teams</span>/{sport}</a> <span class="methods"><a href="#teams__sport__get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_teams__sport_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#teams__sport__get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Get all teams in a given sport. Each team object also includes the list of players.</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="teams__sport__get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/teams</span>/{sport}</h4></div><div class="modal-body"><div class="alert alert-info"><p>Get all teams in a given sport. Each team object also includes the list of players.</p></div><ul class="nav nav-tabs"><li class="active"><a href="#teams__sport__get_request" data-toggle="tab">Request</a></li><li><a href="#teams__sport__get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="teams__sport__get_request"><h3>URI Parameters</h3><ul><li><strong>sport</strong>: <em><span class="required">required</span>(string)</em></li></ul></div><div class="tab-pane" id="teams__sport__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>[
   {
       "id": "8",
@@ -344,7 +485,11 @@ pre code {
         },
         ...
     ],
-    "balance": "992.9870"
+    "balance": "992.9870",
+    "profit": 0,
+    "dividends": 0,
+    "value": 0,
+    "currency": "SVC",
 }
 </code></pre></div></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_users_balance"><span class="parent">/users</span>/balance</a> <span class="methods"><a href="#users_balance_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_users_balance" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#users_balance_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Get my chash balance. Requires athentication.</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="users_balance_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/users</span>/balance</h4></div><div class="modal-body"><div class="alert alert-info"><p>Get my chash balance. Requires athentication.</p></div><ul class="nav nav-tabs"><li class="active"><a href="#users_balance_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="users_balance_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
     "balance": "992.9870"
