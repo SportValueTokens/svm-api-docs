@@ -209,7 +209,7 @@ pre code {
     "weight": "91",
     "photo": "https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90026266.png"
 }
-</code></pre></div></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_players__sport___playerid__stats"><span class="parent">/players/{sport}/{playerId}</span>/stats</a> <span class="methods"><a href="#players__sport___playerid__stats_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_players__sport___playerid__stats" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#players__sport___playerid__stats_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Get player stats</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="players__sport___playerid__stats_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/players/{sport}/{playerId}</span>/stats</h4></div><div class="modal-body"><div class="alert alert-info"><p>Get player stats</p></div><ul class="nav nav-tabs"><li class="active"><a href="#players__sport___playerid__stats_get_request" data-toggle="tab">Request</a></li><li><a href="#players__sport___playerid__stats_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="players__sport___playerid__stats_get_request"><h3>URI Parameters</h3><ul><li><strong>sport</strong>: <em><span class="required">required</span>(string)</em></li><li><strong>playerId</strong>: <em><span class="required">required</span>(string)</em></li></ul></div><div class="tab-pane" id="players__sport___playerid__stats_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
+</code></pre></div></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_players__sport___playerid__stats"><span class="parent">/players/{sport}/{playerId}</span>/stats</a> <span class="methods"><a href="#players__sport___playerid__stats_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_players__sport___playerid__stats" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#players__sport___playerid__stats_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Get player stats for a specified period or at all times</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="players__sport___playerid__stats_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/players/{sport}/{playerId}</span>/stats</h4></div><div class="modal-body"><div class="alert alert-info"><p>Get player stats for a specified period or at all times</p></div><ul class="nav nav-tabs"><li class="active"><a href="#players__sport___playerid__stats_get_request" data-toggle="tab">Request</a></li><li><a href="#players__sport___playerid__stats_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="players__sport___playerid__stats_get_request"><h3>URI Parameters</h3><ul><li><strong>sport</strong>: <em><span class="required">required</span>(string)</em></li><li><strong>playerId</strong>: <em><span class="required">required</span>(string)</em></li></ul><h3>Query Parameters</h3><ul><li><strong>period</strong>: <em>(string)</em><p>one of the following</p></li><li><strong>from</strong>: <em>(string)</em><p>optional start date in ISO format</p></li><li><strong>to</strong>: <em>(string)</em><p>optional end date in ISO format</p></li></ul></div><div class="tab-pane" id="players__sport___playerid__stats_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
   "id": "5",
   "sport": "football",
   "name": "Benjamin Chilwell",
@@ -449,7 +449,38 @@ pre code {
       "price": "1.0000"
   }
 ]
-</code></pre></div></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_market__market___assetid_"><span class="parent">/market/{market}</span>/{assetId}</a> <span class="methods"><a href="#market__market___assetid__get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_market__market___assetid_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#market__market___assetid__get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Get detailes for an asset</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="market__market___assetid__get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/market/{market}</span>/{assetId}</h4></div><div class="modal-body"><div class="alert alert-info"><p>Get detailes for an asset</p></div><ul class="nav nav-tabs"><li class="active"><a href="#market__market___assetid__get_request" data-toggle="tab">Request</a></li></ul><div class="tab-content"><div class="tab-pane active" id="market__market___assetid__get_request"><h3>URI Parameters</h3><ul><li><strong>market</strong>: <em><span class="required">required</span>(string)</em></li><li><strong>assetId</strong>: <em><span class="required">required</span>(string)</em></li></ul></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_market__market___assetid__prices"><span class="parent">/market/{market}/{assetId}</span>/prices</a> <span class="methods"><a href="#market__market___assetid__prices_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_market__market___assetid__prices" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#market__market___assetid__prices_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Get price history for an asset</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="market__market___assetid__prices_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/market/{market}/{assetId}</span>/prices</h4></div><div class="modal-body"><div class="alert alert-info"><p>Get price history for an asset</p></div><ul class="nav nav-tabs"><li class="active"><a href="#market__market___assetid__prices_get_request" data-toggle="tab">Request</a></li></ul><div class="tab-content"><div class="tab-pane active" id="market__market___assetid__prices_get_request"><h3>URI Parameters</h3><ul><li><strong>market</strong>: <em><span class="required">required</span>(string)</em></li><li><strong>assetId</strong>: <em><span class="required">required</span>(string)</em></li></ul></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="users" class="panel-title">/users</h3></div><div class="panel-body"><div class="top-resource-description"><p>User management resources</p></div><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_users_login"><span class="parent">/users</span>/login</a> <span class="methods"><a href="#users_login_post"><span class="badge badge_post">post</span></a></span></h4></div><div id="panel_users_login" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#users_login_post'" class="list-group-item"><span class="badge badge_post">post</span><div class="method_description"><p>Get a JWT authentication token using a login and password</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="users_login_post"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_post">post</span> <span class="parent">/users</span>/login</h4></div><div class="modal-body"><div class="alert alert-info"><p>Get a JWT authentication token using a login and password</p></div><ul class="nav nav-tabs"><li class="active"><a href="#users_login_post_request" data-toggle="tab">Request</a></li><li><a href="#users_login_post_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="users_login_post_request"><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
+</code></pre></div></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_market__market___assetid_"><span class="parent">/market/{market}</span>/{assetId}</a> <span class="methods"><a href="#market__market___assetid__get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_market__market___assetid_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#market__market___assetid__get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Get details for an asset</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="market__market___assetid__get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/market/{market}</span>/{assetId}</h4></div><div class="modal-body"><div class="alert alert-info"><p>Get details for an asset</p></div><ul class="nav nav-tabs"><li class="active"><a href="#market__market___assetid__get_request" data-toggle="tab">Request</a></li><li><a href="#market__market___assetid__get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="market__market___assetid__get_request"><h3>URI Parameters</h3><ul><li><strong>market</strong>: <em><span class="required">required</span>(string)</em></li><li><strong>assetId</strong>: <em><span class="required">required</span>(string)</em></li></ul></div><div class="tab-pane" id="market__market___assetid__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
+    "id": "60",
+    "playerId": "60",
+    "totalSupply": "1000.0000",
+    "market": "football",
+    "name": "Fabian Lukas Schär",
+    "symbol": "FLS",
+    "score": null,
+    "scoringDate": null,
+    "position": "DEF",
+    "team": "Newcastle",
+    "price": "1.0000"
+}
+</code></pre></div></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_market__market___assetid__prices"><span class="parent">/market/{market}/{assetId}</span>/prices</a> <span class="methods"><a href="#market__market___assetid__prices_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_market__market___assetid__prices" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#market__market___assetid__prices_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Get price history for an asset</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="market__market___assetid__prices_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/market/{market}/{assetId}</span>/prices</h4></div><div class="modal-body"><div class="alert alert-info"><p>Get price history for an asset</p></div><ul class="nav nav-tabs"><li class="active"><a href="#market__market___assetid__prices_get_request" data-toggle="tab">Request</a></li><li><a href="#market__market___assetid__prices_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="market__market___assetid__prices_get_request"><h3>URI Parameters</h3><ul><li><strong>market</strong>: <em><span class="required">required</span>(string)</em></li><li><strong>assetId</strong>: <em><span class="required">required</span>(string)</em></li></ul><h3>Query Parameters</h3><ul><li><strong>period</strong>: <em>(string)</em><p>one of the following</p></li></ul></div><div class="tab-pane" id="market__market___assetid__prices_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>[
+    {
+        "time": "2021-08-03T14:01:42.586Z",
+        "price": "1.0060"
+    },
+    {
+        "time": "2021-08-03T14:04:40.492Z",
+        "price": "1.0070"
+    },
+    {
+        "time": "2021-08-03T14:53:43.859Z",
+        "price": "1.0173"
+    },
+    {
+        "time": "2021-08-03T16:07:32.957Z",
+        "price": "1.0370"
+    }
+]
+</code></pre></div></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="users" class="panel-title">/users</h3></div><div class="panel-body"><div class="top-resource-description"><p>User management resources</p></div><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_users_login"><span class="parent">/users</span>/login</a> <span class="methods"><a href="#users_login_post"><span class="badge badge_post">post</span></a></span></h4></div><div id="panel_users_login" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#users_login_post'" class="list-group-item"><span class="badge badge_post">post</span><div class="method_description"><p>Get a JWT authentication token using a login and password</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="users_login_post"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_post">post</span> <span class="parent">/users</span>/login</h4></div><div class="modal-body"><div class="alert alert-info"><p>Get a JWT authentication token using a login and password</p></div><ul class="nav nav-tabs"><li class="active"><a href="#users_login_post_request" data-toggle="tab">Request</a></li><li><a href="#users_login_post_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="users_login_post_request"><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
   "username": "username",
   "email": "password"
 }
@@ -462,50 +493,117 @@ pre code {
   "email": "asdasd@gmail.com"
 }
 </code></pre></div></div><div class="tab-pane" id="users_register_post_response"><h2>HTTP status code <a href="http://httpstatus.es/201" target="_blank">201</a></h2></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_users_me"><span class="parent">/users</span>/me</a> <span class="methods"><a href="#users_me_get"><span class="badge badge_get">get</span></a> <a href="#users_me_post"><span class="badge badge_post">post</span></a></span></h4></div><div id="panel_users_me" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#users_me_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Get my profile data</p></div><div class="clearfix"></div></div><div onclick="window.location.href = '#users_me_post'" class="list-group-item"><span class="badge badge_post">post</span><div class="method_description"><p>Update my user profile data</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="users_me_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/users</span>/me</h4></div><div class="modal-body"><div class="alert alert-info"><p>Get my profile data</p></div><ul class="nav nav-tabs"><li class="active"><a href="#users_me_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="users_me_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
-  "id": "1",
-  "username": "chrpopov",
-  "fullName": "Chris Popov",
-  "email": "asdasd@gmail.com"
+    "id": "2",
+    "username": "demo1",
+    "fullName": "Demo User 1",
+    "displayName": "user1",
+    "email": "cpopov+demo1@sportvalue.co",
+    "suspended": false,
+    "verified": false,
+    "role": "user",
+    "streetAddress": null,
+    "addressMore": null,
+    "city": null,
+    "postcode": null,
+    "country": null,
+    "dateOfBirth": null,
+    "phone": null,
+    "marketing_email": null,
+    "marketing_sms": null,
+    "marketing_phone": null,
+    "marketing_push": null,
+    "createdAt": "2021-07-30T09:02:55.311Z",
+    "updatedAt": "2021-07-30T09:02:55.311Z"
 }
 </code></pre></div></div></div></div></div></div></div><div class="modal fade" tabindex="0" id="users_me_post"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_post">post</span> <span class="parent">/users</span>/me</h4></div><div class="modal-body"><div class="alert alert-info"><p>Update my user profile data</p></div><ul class="nav nav-tabs"><li class="active"><a href="#users_me_post_request" data-toggle="tab">Request</a></li><li><a href="#users_me_post_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="users_me_post_request"><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
-  "fullName": "Chris Popov",
-  "email": "asdasd@gmail.com"
+    "id": "2",
+    "username": "demo1",
+    "fullName": "Demo User 1",
+    "displayName": "user1",
+    "email": "cpopov+demo1@sportvalue.co",
+    "suspended": false,
+    "verified": false,
+    "role": "user",
+    "streetAddress": null,
+    "addressMore": null,
+    "city": null,
+    "postcode": null,
+    "country": null,
+    "dateOfBirth": null,
+    "phone": null,
+    "marketing_email": null,
+    "marketing_sms": null,
+    "marketing_phone": null,
+    "marketing_push": null
 }
 </code></pre></div></div><div class="tab-pane" id="users_me_post_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_users_portfolio"><span class="parent">/users</span>/portfolio</a> <span class="methods"><a href="#users_portfolio_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_users_portfolio" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#users_portfolio_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Get all the asset that I own. Requires athentication.</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="users_portfolio_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/users</span>/portfolio</h4></div><div class="modal-body"><div class="alert alert-info"><p>Get all the asset that I own. Requires athentication.</p></div><ul class="nav nav-tabs"><li class="active"><a href="#users_portfolio_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="users_portfolio_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
+    "balance": "22.9775",
+    "profit": "1537.2046",
+    "payouts": "0.0000",
+    "value": "1537.2046",
+    "currency": "SVC",
     "assets": [
         {
-            "assetId": "4",
-            "market": "football",
-            "name": "Ethan Stuart William Galbraith",
-            "position": "MID",
+            "assetId": "334",
+            "playerId": "528",
+            "market": "basketball",
+            "name": "Kaiser Gates",
+            "position": "F",
             "score": null,
-            "symbol": "ESWG",
-            "team": "Manchester United",
-            "amount": "1.0000"
+            "price": "1.0203",
+            "photo": null,
+            "symbol": "KG",
+            "team": "Brooklyn Nets",
+            "amount": "0.0000"
         },
-        ...
-    ],
-    "balance": "992.9870",
-    "profit": 0,
-    "dividends": 0,
-    "value": 0,
-    "currency": "SVC",
+        {
+            "assetId": "271",
+            "playerId": "425",
+            "market": "basketball",
+            "name": "Jaylen Morris",
+            "position": null,
+            "score": null,
+            "price": "1.0286",
+            "photo": null,
+            "symbol": "JM",
+            "team": "Atlanta Hawks",
+            "amount": "4.0000"
+        }
 }
 </code></pre></div></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_users_balance"><span class="parent">/users</span>/balance</a> <span class="methods"><a href="#users_balance_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_users_balance" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#users_balance_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Get my chash balance. Requires athentication.</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="users_balance_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/users</span>/balance</h4></div><div class="modal-body"><div class="alert alert-info"><p>Get my chash balance. Requires athentication.</p></div><ul class="nav nav-tabs"><li class="active"><a href="#users_balance_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="users_balance_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
     "balance": "992.9870"
 }
 </code></pre></div></div></div></div></div></div></div></div><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_users_transactions"><span class="parent">/users</span>/transactions</a> <span class="methods"><a href="#users_transactions_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_users_transactions" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#users_transactions_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>list my transactions</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="users_transactions_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/users</span>/transactions</h4></div><div class="modal-body"><div class="alert alert-info"><p>list my transactions</p></div><ul class="nav nav-tabs"><li class="active"><a href="#users_transactions_get_request" data-toggle="tab">Request</a></li><li><a href="#users_transactions_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="users_transactions_get_request"><h3>Query Parameters</h3><ul><li><strong>from</strong>: <em>(datetime)</em><p>get transactions after this time</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>2020-01-01T16:45:41</code></pre></div></li><li><strong>to</strong>: <em>(datetime)</em><p>get transactions before this time</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>2020-01-01T16:45:41</code></pre></div></li><li><strong>page</strong>: <em>(number)</em></li><li><strong>pageSize</strong>: <em>(number)</em></li><li><strong>sort</strong>: <em>(string)</em><p>sort by, field to sort by</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>name</code></pre></div></li><li><strong>dir</strong>: <em>(string)</em><p>sort direction</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>asc / desc</code></pre></div></li></ul></div><div class="tab-pane" id="users_transactions_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>[
-  {
-      "id": "502",
-      "accountId": 504,
-      "type": "purchase",
-      "amount": "-2.5063",
-      "txDate": "2021-01-16T08:19:36.884Z",
-      "balance": "997.4937",
-      "market": "football",
-      "details": "purchase of 2.5 KZ"
-  },
-  ...
+    {
+        "id": "297100",
+        "accountId": 3,
+        "type": "sale",
+        "amount": "6.2347",
+        "txDate": "2021-08-24T12:48:07.555Z",
+        "balance": "20.1668",
+        "market": "basketball",
+        "details": "sale of 6 NC"
+    },
+    {
+        "id": "297098",
+        "accountId": 3,
+        "type": "sale",
+        "amount": "8.0970",
+        "txDate": "2021-08-24T12:47:47.052Z",
+        "balance": "13.9321",
+        "market": "football",
+        "details": "sale of 8 EBB"
+    },
+    {
+        "id": "297088",
+        "accountId": 3,
+        "type": "purchase",
+        "amount": "-2.0656",
+        "txDate": "2021-08-24T12:46:03.591Z",
+        "balance": "5.8351",
+        "market": "football",
+        "details": "purchase of 2 NP"
+    }
 ]
 </code></pre></div></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="trades" class="panel-title">/trades</h3></div><div class="panel-body"><div class="top-resource-description"><p>Trading API. Reqquires authentication.</p></div><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_trades"><span class="parent"></span>/trades</a> <span class="methods"><a href="#trades_get"><span class="badge badge_get">get</span></a> <a href="#trades_post"><span class="badge badge_post">post</span></a></span></h4></div><div id="panel_trades" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#trades_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>get my trade history</p></div><div class="clearfix"></div></div><div onclick="window.location.href = '#trades_post'" class="list-group-item"><span class="badge badge_post">post</span><div class="method_description"><p>execute a trade</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="trades_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/trades</h4></div><div class="modal-body"><div class="alert alert-info"><p>get my trade history</p></div><ul class="nav nav-tabs"><li class="active"><a href="#trades_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="trades_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>[
   {
